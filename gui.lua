@@ -7,7 +7,15 @@ b:Label("The path does not disappear when you destroy the gui.",{
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
 }) 
 b:Button("Show correct paths",function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MaxSeb12/ImpossibleGlassObby/main/main.lua')))()
+    while true and task.wait() do
+    for i,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do
+    if v.Name == 'TouchInterest' then
+    v.Parent.Transparency = 1
+    end
+    end
+    end
+
+-- i am so sorry
 end)
 local b = w:CreateFolder("Credits")
 b:Label("UI : wally UI",{
