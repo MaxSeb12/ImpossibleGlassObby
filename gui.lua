@@ -7,7 +7,7 @@ b:Label("The path does not disappear when you destroy the gui.",{
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
 }) 
 b:Button("Show correct paths",function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MaxSeb12/ImpossibleGlassObby/main/main.lua')))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MaxSeb12/ImpossibleGlassObby/main.lua')))()
 end)
 local b = w:CreateFolder("Credits")
 b:Label("UI : wally UI",{
