@@ -17,6 +17,8 @@ b:Button("Show correct paths",function()
 
 -- i am so sorry
 end)
+b:DestroyGui()
+
 local b = w:CreateFolder("Credits")
 b:Label("UI : wally UI",{
     TextSize = 14; -- Self Explaining
@@ -28,4 +30,3 @@ b:Label("script by slimebid#1842",{
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining  
 }) 
-b:DestroyGui()
