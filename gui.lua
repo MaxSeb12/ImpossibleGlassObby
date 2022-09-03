@@ -1,6 +1,7 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 local w = library:CreateWindow("PossibleGlass")
 local b = w:CreateFolder("Main")
+local p = game.Players.LocalPlayer
 b:Label("The path does not disappear when you destroy the gui.",{
     TextSize = 14; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
@@ -15,6 +16,11 @@ b:Button("Show correct paths",function()
     end
     end
 
+-- i am so sorry
+end)
+b:Button("Win",function()
+   p.Character.HumanoidRootPart.CFrame = CFrame.new(1105.76917, 61.5606613, 115.464783, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    wait()
 -- i am so sorry
 end)
 b:DestroyGui()
